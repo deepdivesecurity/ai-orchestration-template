@@ -2,9 +2,12 @@
 
 ## Name
 
+
 ## Goal
 
+
 ## Primary users
+
 
 ## Core functionality
 
@@ -17,7 +20,7 @@ Describe:
 - External services
 
 ## Tech Stack
-- Frontend:
+- Frontend: 
 - Backend:
 - Database:
 - Infrastructure:

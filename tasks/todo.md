@@ -1,5 +1,2 @@
 # TODO
-List upcoming tasks.
-
-## Phase 1
-- [ ] Task 1
+List upcoming tasks in the format '[ ] {task}' under headers relating to their phase.

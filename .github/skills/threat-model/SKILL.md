@@ -72,8 +72,11 @@ Do not assume specific technologies.
 ## Output Format
 - If mitigation introduces architectural change, require new decision entry in tasks/decisions.md with reference to this analysis according to context/state-policy.md.
 - If mitigation introduces new task, append to tasks/todo.md.
+- Include a unique evidence field: 'Threat-Model-Ref: TM-YYYYMMDD-<slug>'.
 
 ### Threat Model Report
+Threat-Model-Ref:
+
 Feature Analyzed:
 
 For each threat:
