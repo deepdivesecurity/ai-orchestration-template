@@ -50,15 +50,17 @@ If required project context is missing, provide a recommendation based on best p
 ## Output Format
 - Start output with 'Phase: Architect'
 - When calling the threat-model skill, include 'Phase: Threat-Model' in the prompt to provide context for the threat model output.
+- Include a Mermaid diagram section that is compatible with draw.io import ('Arrange -> Insert -> Advanced -> Mermaid').
 - Provide a structured architectural decision document with the following sections:
 1. Problem Summary  
 2. Proposed Design  
 3. Contract Changes (if any)
 4. Risks  
 5. Tradeoffs  
-6. Migration Plan (if required)  
+6. Migration Plan (if required)
 7. Threat-Model-Ref
 8. Evidence (files read, key workspace facts, decisions updated)
+9. Architecture Diagram (Mermaid, draw.io-compatible) saved to architecture/diagrams with a unique name.
 
 ---
 
