@@ -79,17 +79,13 @@ Threat-Model-Ref:
 
 Feature Analyzed:
 
-For each threat:
+Threat table (required):
 
-Threat:  
-Category:  
-Threat Mapping:  
-Severity: Low / Medium / High / Critical  
-Likelihood: Low / Medium / High  
-Impact:  
-Mitigation:  
-Compliance Security Controls:  
-Residual Risk:  
+| Threat | Category (STRIDE) | Threat Mapping (ATT&CK/CWE/CAPEC/OWASP) | Severity | Likelihood | Impact | Mitigation | Compliance Security Controls | Residual Risk |
+|---|---|---|---|---|---|---|---|---|
+| ... | ... | ... | Low/Medium/High/Critical | Low/Medium/High | ... | ... | ... | ... |
+
+The report must be easy to scan and use table format as the primary presentation.
 
 ---
 

@@ -7,6 +7,9 @@ Applies to:
 - tasks/decisions.md
 - tasks/logs.md
 - tasks/todo.md
+- documents/architect/
+- documents/builder/
+- documents/tester/
 
 ---
 
@@ -91,6 +94,12 @@ Builder does not create tasks unless instructed.
 - Decisions cannot be deleted - only deprecated.
 - Logs must remain chronological.
 - No retroactive modification without explicit instruction.
+- Builder and Tester must generate per-request documentation artifacts in 'documents/builder/' and 'documents/tester/'.
+- Architect must generate per-request documentation artifacts in 'documents/architect/'.
+- Threat-model output must be presented in table format for readability and stored in 'documents/architect/'.
+- Architecture outputs must include readable cost estimate sections with a summary and more granular sections by technology or service stored in 'documents/architect/'.
+- Architecture diagrams must be produced as '.drawio' files.
+- Architecture diagrams must use official vendor/service icons for vendor-specific diagrams and include relevant connections, ports/protocols (when known), and applicable network/security controls.
 
 ---
 

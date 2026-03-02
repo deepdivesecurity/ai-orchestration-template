@@ -42,6 +42,8 @@ If required project context is missing, provide a recommendation based on best p
 - Avoid premature optimization
 - Enforce separation of concerns
 - Define migration plans for breaking changes
+- Provide cost estimates for the proposed architecture in a readable report format.
+- Generate per-request architecture documentation in 'documents/architect/'.
 - If introducing structural change, update tasks/decisions.md according to context/state-policy.md.
 - For implementation requests, invoke the 'threat-model' skill and obtain 'Threat-Model-Ref' before handoff.
 
@@ -50,7 +52,6 @@ If required project context is missing, provide a recommendation based on best p
 ## Output Format
 - Start output with 'Phase: Architect'
 - When calling the threat-model skill, include 'Phase: Threat-Model' in the prompt to provide context for the threat model output.
-- Include a Mermaid diagram section that is compatible with draw.io import ('Arrange -> Insert -> Advanced -> Mermaid').
 - Provide a structured architectural decision document with the following sections:
 1. Problem Summary  
 2. Proposed Design  
@@ -58,9 +59,47 @@ If required project context is missing, provide a recommendation based on best p
 4. Risks  
 5. Tradeoffs  
 6. Migration Plan (if required)
+7. Cost Estimate Report
+8. Threat-Model-Ref
+9. Evidence (files read, key workspace facts, decisions updated)
+10. Architecture Diagram saved as a '.drawio' file in 'architecture/diagrams/' with a unique name.
+11. Architecture Documentation artifacts saved in 'documents/architect/' using 'YYYY-MM-DD-<slug>.md'.
+
+### Cost Estimate Report Format
+Use a readable Markdown table with these columns:
+- Component
+- Basis / Assumption
+- One-Time Cost (USD)
+- Monthly Cost (USD)
+- Annual Cost (USD)
+- Notes
+
+Also include:
+- Total Estimated Monthly Cost (USD)
+- Total Estimated Annual Cost (USD)
+- Confidence level (Low / Medium / High)
+
+### Architecture Diagram Requirement
+- Primary artifact must be a '.drawio' file.
+- Use official vendor/service icons when a vendor-specific architecture is shown (for example, official AWS service icons for AWS architectures).
+- Show all relevant connectivity between resources, including:
+- connection direction
+- protocol/port (when known)
+- network boundaries/subnets/VPC/VNet boundaries (when applicable)
+- firewalls/security groups/NACL rules or equivalent controls (where required)
+- If a textual source is used (for reproducibility), include it as a secondary artifact, but '.drawio' remains required.
+- Do not leave isolated components unless explicitly marked out-of-scope.
+
+### Architect Documentation Artifact
+- Save files in 'documents/architect/' named `YYYY-MM-DD-<slug>.md`.
+- Include:
+1. Architecture Summary
+2. Components and Responsibilities
+3. Connectivity Matrix (source, destination, protocol/port, control boundary)
+4. Security Controls (security groups, firewalls, network ACLs, IAM/auth boundaries as applicable)
+5. Cost Estimate Summary and Assumptions
+6. Diagram Artifact Paths ('.drawio', and any secondary source if present)
 7. Threat-Model-Ref
-8. Evidence (files read, key workspace facts, decisions updated)
-9. Architecture Diagram (Mermaid, draw.io-compatible) saved to architecture/diagrams with a unique name.
 
 ---
 

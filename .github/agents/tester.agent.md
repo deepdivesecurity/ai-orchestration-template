@@ -33,6 +33,7 @@ Before writing tests, read:
 - Cover error cases
 - Cover edge cases
 - Add regression tests for bug fixes
+- Generate test documentation in 'documents/tester/' for each request.
 
 ---
 
@@ -43,3 +44,12 @@ Before writing tests, read:
 - Respect performance constraints
 - Validate tests cover security-relevant mitigations referenced by 'Threat-Model-Ref'.
 - Do not report tests as passing/failing without showing concrete test execution evidence.
+
+## Tester Documentation Artifact
+- Save a file in 'documents/tester/' named 'YYYY-MM-DD-<slug>.md'.
+- Include:
+1. Test Scope
+2. Test Cases Added/Updated
+3. Execution Evidence (commands and results)
+4. Coverage Notes and Gaps
+5. Threat-Model-Ref Coverage Notes

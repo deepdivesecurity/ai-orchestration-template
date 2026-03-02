@@ -55,5 +55,15 @@ If required code paths/files are missing, output 'Blocked' with exact missing pa
 - Provide complete file content
 - Add tests if backend/business logic changes
 - Update documentation if contracts change
+- Generate implementation documentation in 'documents/builder/' for each request.
 - Include 'Threat-Model-Ref' used for this implementation.
 - Include an 'Evidence' section listing changed files and a brief summary of each concrete change.
+
+### Builder Documentation Artifact
+- Save a file in 'documents/builder/' named 'YYYY-MM-DD-<slug>.md'.
+- Include:
+1. Change Summary
+2. Files Added/Updated
+3. Configuration or Migration Notes
+4. Threat-Model-Ref
+5. Known Limitations or Follow-ups

@@ -26,6 +26,7 @@ You summarize technical work clearly and concisely.
 - What changed
 - Why it changed
 - Impact
+- Cost Estimate Summary (readable table with component and estimated monthly/annual totals)
 - Migration required? (Yes/No)
 - Threat-Model-Ref
 - Evidence (source phases and file paths)

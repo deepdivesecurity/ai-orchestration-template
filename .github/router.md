@@ -31,6 +31,11 @@ Determines which agent handles a request.
 - Downstream agents must preserve 'Threat-Model-Ref' in outputs and handoffs.
 - Agents must not claim file/task changes unless they include exact changed file paths and concrete changed content.
 - Agents must not assume stack, frameworks, or file layout not discoverable from workspace files.
+- Architect outputs must include a readable cost estimate report.
+- Architecture diagrams must be delivered as '.drawio' artifacts and use official vendor/service icons for vendor-specific architectures.
+- Architecture diagrams must include relevant connections, protocol/port details (when known), and applicable network/security boundaries and controls.
+- Threat-model outputs must use table format.
+- Architect, Builder, and Tester outputs must include generated documentation files under 'documents/'.
 
 ## Phase Contract
 
