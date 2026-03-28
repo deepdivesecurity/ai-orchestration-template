@@ -11,6 +11,9 @@ Analyze security risks in a proposed or implemented change.
 
 ---
 
+## When to Use this Skill
+Use this skill when you need to identify and mitigate security threats for a new feature, architectural change, or infrastructure modification. This should be performed during design and before implementation to ensure security is built in from the start.
+
 ## Context Resolution
 Before performing analysis, read:
 
