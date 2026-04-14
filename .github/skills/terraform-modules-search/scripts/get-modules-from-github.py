@@ -1,9 +1,3 @@
-# /// script
-# dependencies = [
-#   "httpx",
-# ]
-# ///
-
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 import httpx
 import base64
