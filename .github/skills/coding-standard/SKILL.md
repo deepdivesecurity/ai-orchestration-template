@@ -50,3 +50,9 @@ Do not use this skill for:
 - Refactor and add features as needed based on actual use cases
 - Start simple, only refactor when necessary
 - Avoid speculative generality
+
+## File Structure
+### Project Structure
+- Organize files and directories by feature, module, or layer (e.g., frontend, backend, infrastructure)
+- Follow consistent naming conventions for files and directories
+- Separate concerns (e.g., separate business logic from presentation logic)
