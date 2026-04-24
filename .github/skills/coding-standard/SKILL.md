@@ -2,6 +2,9 @@
 name: coding-standard
 description: Baseline cross-project coding standards for naming, readability, immutability, and code-quality. Use detailed IaC, frontend, backend, or other skills for specific framework patterns or standards.
 license: Complete terms in LICENSE.txt
+metadata:
+  author: Deep Dive Security
+  version: 1.0.0
 ---
 
 # Coding Standards & Best Practices

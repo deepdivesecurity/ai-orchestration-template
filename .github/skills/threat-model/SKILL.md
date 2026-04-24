@@ -2,6 +2,9 @@
 name: threat-model
 description: Perform structured security threat modeling for any feature, architecture, or infrastructure change.
 license: Complete terms in LICENSE.txt
+metadata:
+  author: Deep Dive Security
+  version: 1.0.0
 ---
 
 # Threat Model Skill

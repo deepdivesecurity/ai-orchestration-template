@@ -3,6 +3,7 @@ name: terraform-modules-search
 description: Searches for Terraform modules in a GitHub organization and retrieves their README content to provide information on how to use the modules.
 license: Complete terms in LICENSE.txt
 metadata: 
+  author: Deep Dive Security
   version: 1.0.0
 ---
 
